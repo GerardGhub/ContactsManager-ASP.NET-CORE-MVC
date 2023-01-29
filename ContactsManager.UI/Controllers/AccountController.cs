@@ -69,7 +69,7 @@ namespace ContactsManager.UI.Controllers
 
 
   [HttpPost]
-  public async Task<IActionResult> Login(LoginDTO loginDTO)
+  public async Task<IActionResult> Login(LoginDTO loginDTO, string? ReturnUrl)
   {
    if (!ModelState.IsValid)
    {
